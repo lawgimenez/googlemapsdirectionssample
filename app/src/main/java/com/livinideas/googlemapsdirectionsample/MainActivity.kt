@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
     }
 
-    override fun onMapReady(googleMap: GoogleMap?) {
+    override fun onMapReady(googleMap: GoogleMap) {
         this.googleMap = googleMap
         // Sample coordinates
         val latLngOrigin = LatLng(10.3181466, 123.9029382) // Ayala
